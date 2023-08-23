@@ -3,12 +3,12 @@ import customtkinter as ctk
 from tkinter import filedialog
 from PIL import Image, ImageTk
 import qrcode
-try:
-    from ctypes import windll, byref, sizeof, c_int
+try: 
+    from ctypes import windll, byref, sizeof, c_int #! changes title bar color
 except:
     pass
 
-class App(ctk.CTk): #! Main Window
+class App(ctk.CTk): #! Main Window 
     def __init__(self):
         self.title_bar_color()
 
